@@ -32,7 +32,7 @@ def checkOnWebsite(sc, website, website_name, extraInfo: str, out_of_stock_keywo
         webbrowser.open(website)
 
     printResults(stock_label)
-    s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,))
+    s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,headers))
 
 microsoft_website_name = "Microsoft"
 microsoft_keyword = "Out of stock"
