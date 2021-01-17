@@ -3,39 +3,47 @@ import sched, time
 import datetime
 import webbrowser
 
+#-------------------------------------------------------------------------------------
+
 sleep_time = 60*5
 priority = 1
 s = sched.scheduler(time.time, time.sleep)
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75'}
+
+#-------------------------------------------------------------------------------------
 
 def printResults(stock_label):
     # Print whether the item is out of stock or not along with the date and time
     date_and_time = str(datetime.datetime.today())
     print(stock_label + " - " + date_and_time)
 
+#-------------------------------------------------------------------------------------
+
 def checkOnWebsite(sc, website, website_name, extraInfo: str, out_of_stock_keyword, headers):
     try:
         res = requests.get(website,headers=headers)
+
+        stock_label = ""
+        siteInfo = ""
+        if (len(extraInfo)):
+            # extraInfo contains text
+            siteInfo = website_name + " - " + extraInfo
+        else:
+            siteInfo = website_name
+
+        if (out_of_stock_keyword in res.text):
+            stock_label = "Out of stock - " + siteInfo
+        else:
+            stock_label = "In stock - " + siteInfo
+            # Open the link in the browser if in stock
+            webbrowser.open(website)
+
+        printResults(stock_label)
+        s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,headers))
     except:
         print("Exception occured with website: " + website + " extraInfo: " + extraInfo)
 
-    stock_label = ""
-    siteInfo = ""
-    if (len(extraInfo)):
-        # extraInfo contains text
-        siteInfo = website_name + " - " + extraInfo
-    else:
-        siteInfo = website_name
-
-    if (out_of_stock_keyword in res.text):
-        stock_label = "Out of stock - " + siteInfo
-    else:
-        stock_label = "In stock - " + siteInfo
-        # Open the link in the browser if in stock
-        webbrowser.open(website)
-
-    printResults(stock_label)
-    s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,headers))
+#-------------------------------------------------------------------------------------
 
 microsoft_website_name = "Microsoft"
 microsoft_keyword = "Out of stock"
@@ -73,3 +81,5 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-se
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html?langId=-1&krypto=v1iTKzfakYu7ufaGHAJhD7PIUL3dEtzLuxKt%2BP%2B0brN3S31Qw7B3uQAfXdihfLNEPm8Mz4sg1pi71Zyg463g0gzJJ8mfhcDfCTaFe8sL2QdRxcFqlWou4Jsfs2Ois3vokyb5RhfTIw%2FE6PS9AyRVMS86UaiD%2FQjo7EEOPs4TRmIYRqmGcB%2Fzl%2BqlI24vJLsYiEO5v1dAJXGJC0q8q8UpUMk%2F0gLWYfNntUBsGZaJ6ZVYA3Dj4LIV0nY7DlS0Wvna',costco_website_name,'extra controller (signed in)',costco_keyword,headers,))
 
 s.run()
+
+#-------------------------------------------------------------------------------------
