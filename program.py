@@ -14,7 +14,10 @@ def printResults(stock_label):
     print(stock_label + " - " + date_and_time)
 
 def checkOnWebsite(sc, website, website_name, extraInfo: str, out_of_stock_keyword, headers):
-    res = requests.get(website,headers=headers)
+    try:
+        res = requests.get(website,headers=headers)
+    except:
+        print("Exception occured with website: " + website + " extraInfo: " + extraInfo)
 
     stock_label = ""
     siteInfo = ""
