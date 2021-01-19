@@ -39,9 +39,10 @@ def checkOnWebsite(sc, website, website_name, extraInfo: str, out_of_stock_keywo
             webbrowser.open(website)
 
         printResults(stock_label)
-        s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,headers))
     except:
-        print("Exception occured with website: " + website + " extraInfo: " + extraInfo)
+        print("Exception occured with website: " + website + "\nextraInfo: " + extraInfo)
+
+    s.enter(sleep_time, priority, checkOnWebsite, (sc,website,website_name,extraInfo,out_of_stock_keyword,headers))
 
 #-------------------------------------------------------------------------------------
 
@@ -79,6 +80,10 @@ costco_website_name = "Costco"
 costco_keyword = "Out of Stock"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html',costco_website_name,'extra controller',costco_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html?langId=-1&krypto=v1iTKzfakYu7ufaGHAJhD7PIUL3dEtzLuxKt%2BP%2B0brN3S31Qw7B3uQAfXdihfLNEPm8Mz4sg1pi71Zyg463g0gzJJ8mfhcDfCTaFe8sL2QdRxcFqlWou4Jsfs2Ois3vokyb5RhfTIw%2FE6PS9AyRVMS86UaiD%2FQjo7EEOPs4TRmIYRqmGcB%2Fzl%2BqlI24vJLsYiEO5v1dAJXGJC0q8q8UpUMk%2F0gLWYfNntUBsGZaJ6ZVYA3Dj4LIV0nY7DlS0Wvna',costco_website_name,'extra controller (signed in)',costco_keyword,headers,))
+
+ant_online_website_name = "Ant Online"
+ant_online_keyword = "Sold Out"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.antonline.com/microsoft/xbox/xbox-series-x-s',ant_online_website_name,'',ant_online_keyword,headers,))
 
 s.run()
 
