@@ -85,6 +85,10 @@ ant_online_website_name = "Ant Online"
 ant_online_keyword = "Sold Out"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.antonline.com/microsoft/xbox/xbox-series-x-s',ant_online_website_name,'',ant_online_keyword,headers,))
 
+kohls_website_name = "Kohls"
+kohls_keyword = "is out of stock"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.kohls.com/product/prd-4814901/xbox-one-series-x-1-tb-gaming-console-headset-bundle-with-marvels-avengers-madden-nfl-21.jsp?prdPV=2',kohls_website_name,'madden, avengers',kohls_keyword,headers,))
+
 s.run()
 
 #-------------------------------------------------------------------------------------
