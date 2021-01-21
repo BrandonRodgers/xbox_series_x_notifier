@@ -5,7 +5,7 @@ import webbrowser
 
 #-------------------------------------------------------------------------------------
 
-sleep_time = 60*5
+sleep_time = 15#60*5
 priority = 1
 s = sched.scheduler(time.time, time.sleep)
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75'}
@@ -54,14 +54,14 @@ best_buy_website_name = "Best Buy"
 best_buy_keyword = "Sold Out"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?skuId=6428324',best_buy_website_name,'',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/35009727-f7d1-47df-8219-d68c6e83990c',best_buy_website_name,'ac valhalla',best_buy_keyword,headers,))
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/f2914681-c213-4542-8293-7376bfc10f61',best_buy_website_name,'game pass',best_buy_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/f2914681-c213-4542-8293-7376bfc10f61',best_buy_website_name,'game pass',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7298b293-4d51-43fd-adb4-ad00cfa76c4f',best_buy_website_name,'extra controller',best_buy_keyword,headers,))
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/907d28df-4262-40d3-8926-8d556f264857',best_buy_website_name,'game pass, extra controller',best_buy_keyword,headers,))
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7d2eb376-760d-4806-b239-668dcd0fe376',best_buy_website_name,'halo, game pass, extra controller',best_buy_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/907d28df-4262-40d3-8926-8d556f264857',best_buy_website_name,'game pass, extra controller',best_buy_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7d2eb376-760d-4806-b239-668dcd0fe376',best_buy_website_name,'halo, game pass, extra controller',best_buy_keyword,headers,))
 
 gamestop_website_name = "Game Stop"
 gamestop_keyword = "Not Available"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/xbox-series-x/consoles/products/xbox-series-x/B224744Y.html',gamestop_website_name,'',gamestop_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/xbox-series-x/consoles/products/xbox-series-x/B224744Y.html',gamestop_website_name,'',gamestop_keyword,headers,))
 
 # adorama_website_name = "Adorama"
 # adorama_keyword = "Temporarily not available"
@@ -78,8 +78,8 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video
 
 costco_website_name = "Costco"
 costco_keyword = "Out of Stock"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html',costco_website_name,'extra controller',costco_keyword,headers,))
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html?langId=-1&krypto=v1iTKzfakYu7ufaGHAJhD7PIUL3dEtzLuxKt%2BP%2B0brN3S31Qw7B3uQAfXdihfLNEPm8Mz4sg1pi71Zyg463g0gzJJ8mfhcDfCTaFe8sL2QdRxcFqlWou4Jsfs2Ois3vokyb5RhfTIw%2FE6PS9AyRVMS86UaiD%2FQjo7EEOPs4TRmIYRqmGcB%2Fzl%2BqlI24vJLsYiEO5v1dAJXGJC0q8q8UpUMk%2F0gLWYfNntUBsGZaJ6ZVYA3Dj4LIV0nY7DlS0Wvna',costco_website_name,'extra controller (signed in)',costco_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html',costco_website_name,'extra controller',costco_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-series-x-1tb-console-with-additional-controller.product.100691493.html?langId=-1&krypto=v1iTKzfakYu7ufaGHAJhD7PIUL3dEtzLuxKt%2BP%2B0brN3S31Qw7B3uQAfXdihfLNEPm8Mz4sg1pi71Zyg463g0gzJJ8mfhcDfCTaFe8sL2QdRxcFqlWou4Jsfs2Ois3vokyb5RhfTIw%2FE6PS9AyRVMS86UaiD%2FQjo7EEOPs4TRmIYRqmGcB%2Fzl%2BqlI24vJLsYiEO5v1dAJXGJC0q8q8UpUMk%2F0gLWYfNntUBsGZaJ6ZVYA3Dj4LIV0nY7DlS0Wvna',costco_website_name,'extra controller (signed in)',costco_keyword,headers,))
 
 ant_online_website_name = "Ant Online"
 ant_online_keyword = "Sold Out"
