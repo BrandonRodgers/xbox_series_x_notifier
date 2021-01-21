@@ -86,8 +86,13 @@ ant_online_keyword = "Sold Out"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.antonline.com/microsoft/xbox/xbox-series-x-s',ant_online_website_name,'',ant_online_keyword,headers,))
 
 kohls_website_name = "Kohls"
-kohls_keyword = "is out of stock"
+#kohls_keyword = "is out of stock"
+kohls_keyword = "sorry"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.kohls.com/product/prd-4814901/xbox-one-series-x-1-tb-gaming-console-headset-bundle-with-marvels-avengers-madden-nfl-21.jsp?prdPV=2',kohls_website_name,'madden, avengers',kohls_keyword,headers,))
+
+walmart_website_name = "Walmart"
+walmart_keyword = "out of stock"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/seort/443574645?irgwc=1&sourceid=imp_0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&veh=aff&wmlspartner=imp_62662&clickid=0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&sharedid=&affiliates_ad_id=612734&campaign_id=9383',walmart_website_name,'',walmart_keyword,headers,))
 
 s.run()
 
