@@ -46,10 +46,32 @@ def checkOnWebsite(sc, website, website_name, extraInfo: str, out_of_stock_keywo
 
 #-------------------------------------------------------------------------------------
 
-# Use this as an example
-# best_buy_website_name = "Best Buy"
-# best_buy_keyword = "Sold Out"
-# s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?skuId=6428324',best_buy_website_name,'',best_buy_keyword,headers,))
+best_buy_website_name = "Best Buy"
+best_buy_keyword = "Sold Out"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149',best_buy_website_name,'',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/96be4c49-d98e-47c6-9a68-291c646d0e47',best_buy_website_name,'Spiderman',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/8f146095-0a5f-4993-b123-711a1d34745b',best_buy_website_name,'Extra Controller',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/c471fae2-1d2c-4870-ad3d-d39bffa39af2',best_buy_website_name,'Spider Man, COD, Demon Souls',best_buy_keyword,headers,))
+
+amazon_website_name = "Amazon"
+amazon_keyword = "unavailable"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.amazon.com/dp/B08FC5L3RG/',amazon_website_name,'',amazon_keyword,headers,))
+
+gamestop_website_name = "Game Stop"
+gamestop_keyword = "Not Available"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html?condition=New',gamestop_website_name,'',gamestop_keyword,headers,))
+
+playstation_website_name = "Playstation"
+playstation_keyword = "Out of Stock"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://direct.playstation.com/en-us/consoles/console/playstation5-console.3005816',playstation_website_name,'',playstation_keyword,headers,))
+
+target_website_name = "Target"
+target_keyword = "Sold out"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.target.com/p/playstation-5-console/-/A-81114595',target_website_name,'',target_keyword,headers,))
+
+walmart_website_name = "Walmart"
+wlmart_keyword = "out of stock"
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/PlayStation-5-Console/363472942',walmart_website_name,'',wlmart_keyword,headers,))
 
 # Do not remove
 s.run()
