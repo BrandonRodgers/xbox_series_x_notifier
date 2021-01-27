@@ -61,9 +61,9 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/a
 
 newegg_website_name = "Newegg"
 newegg_keyword = "OUT OF STOCK"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3881-kr/p/N82E16814487522?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439#',newegg_website_name,'EVGA XC3 Gaming',newegg_keyword,headers,))
-
-
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3897-kr/p/N82E16814487518?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439',newegg_website_name,'EVGA FTW3 Ultra Gaming',newegg_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3895-kr/p/N82E16814487519?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439',newegg_website_name,'EVGA FTW3 Gaming',newegg_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3881-kr/p/N82E16814487522?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439',newegg_website_name,'EVGA XC3 Gaming',newegg_keyword,headers,))
 
 # Do not remove
 s.run()
