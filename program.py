@@ -5,7 +5,7 @@ import webbrowser
 
 #-------------------------------------------------------------------------------------
 
-sleep_time = 60*5
+sleep_time = 15#60*5
 priority = 1
 s = sched.scheduler(time.time, time.sleep)
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75'}
@@ -50,7 +50,7 @@ best_buy_website_name = "Best Buy"
 best_buy_keyword = "Sold Out"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440',best_buy_website_name,'NVIDIA',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/evga-geforce-rtx-3080-ftw3-ultra-gaming-10gb-gddr6-pci-express-4-0-graphics-card/6436196.p?skuId=6436196',best_buy_website_name,'EVGA FTW3 Ultra Gaming',best_buy_keyword,headers,))
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/evga-geforce-rtx-3080-ftw3-gaming-10gb-gddr6x-pci-express-4-0-graphics-card/6436191.p?skuId=6436191',best_buy_website_name,'EVGA FTW3 Gaming',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/evga-geforce-rtx-3080-ftw3-gaming-10gb-gddr6x-pci-express-4-0-graphics-card/6436191.p?skuId=6436191',best_buy_website_name,'EVGA FTW3 Gaming',"Coming Soon",headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/evga-geforce-rtx-3080-xc3-ultra-gaming-10gb-gddr6-pci-express-4-0-graphics-card/6432400.p?skuId=6432400',best_buy_website_name,'EVGA XC3 Ultra Gaming',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/evga-geforce-rtx-3080-xc3-gaming-10gb-gddr6-pci-express-4-0-graphics-card/6436194.p?skuId=6436194',best_buy_website_name,'EVGA XC3 Gaming',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/msi-nvidia-geforce-rtx-3080-ventus-3x-10g-oc-bv-gddr6x-pci-express-4-0-graphic-card-black-silver/6430175.p?skuId=6430175',best_buy_website_name,'MSI Ventus',best_buy_keyword,headers,))
