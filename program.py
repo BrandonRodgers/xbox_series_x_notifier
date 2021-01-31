@@ -59,7 +59,7 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video
 
 walmart_website_name = "Walmart"
 wlmart_keyword = "out of stock"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/PlayStation-5-Console/363472942',walmart_website_name,'',wlmart_keyword,headers,))
+#s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/PlayStation-5-Console/363472942',walmart_website_name,'',wlmart_keyword,headers,))
 
 # Do not remove
 s.run()
