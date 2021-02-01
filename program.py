@@ -65,10 +65,6 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-ge
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3895-kr/p/N82E16814487519?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439',newegg_website_name,'EVGA FTW3 Gaming',newegg_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.newegg.com/evga-geforce-rtx-3080-10g-p5-3881-kr/p/N82E16814487522?cm_mmc=vendor-nvidia&u1=s1611766491405ci1ca52439',newegg_website_name,'EVGA XC3 Gaming',newegg_keyword,headers,))
 
-bhphoto_website_name = "B&H Photo"
-bhphoto_keyword = "Notify When Available"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bhphotovideo.com/c/product/1603617-REG/asus_rog_strix_rtx3080_o10g_gaming_rog_strix_geforce_rtx.html',bhphoto_website_name,'ASUS Strix OC',bhphoto_keyword,headers,))
-
 # Do not remove
 s.run()
 
