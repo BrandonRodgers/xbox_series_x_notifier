@@ -54,6 +54,8 @@ best_buy_website_name = "Best Buy"
 best_buy_keyword = "Sold Out"
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?skuId=6428324',best_buy_website_name,'',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/35009727-f7d1-47df-8219-d68c6e83990c',best_buy_website_name,'ac valhalla',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/0946e97e-3a5d-40cf-a3f3-ec9b123a7415',best_buy_website_name,'cyberpunk',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/bae995a1-12d3-4bc1-a355-8666d4bb729f',best_buy_website_name,'halo',best_buy_keyword,headers,))
 #s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/f2914681-c213-4542-8293-7376bfc10f61',best_buy_website_name,'game pass',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7298b293-4d51-43fd-adb4-ad00cfa76c4f',best_buy_website_name,'extra controller',best_buy_keyword,headers,))
 #s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/907d28df-4262-40d3-8926-8d556f264857',best_buy_website_name,'game pass, extra controller',best_buy_keyword,headers,))
