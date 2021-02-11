@@ -85,7 +85,7 @@ costco_keyword = "Out of Stock"
 
 ant_online_website_name = "Ant Online"
 ant_online_keyword = "Sold Out"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.antonline.com/microsoft/xbox/xbox-series-x-s',ant_online_website_name,'',ant_online_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.antonline.com/Microsoft/Electronics/Gaming_Devices/Gaming_Consoles/1415507',ant_online_website_name,'',ant_online_keyword,headers,))
 
 kohls_website_name = "Kohls"
 #kohls_keyword = "is out of stock"
