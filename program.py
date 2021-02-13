@@ -94,7 +94,7 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.kohls.com/product/
 
 walmart_website_name = "Walmart"
 walmart_keyword = "out of stock"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/seort/443574645?irgwc=1&sourceid=imp_0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&veh=aff&wmlspartner=imp_62662&clickid=0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&sharedid=&affiliates_ad_id=612734&campaign_id=9383',walmart_website_name,'',walmart_keyword,headers,))
+# s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.walmart.com/ip/seort/443574645?irgwc=1&sourceid=imp_0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&veh=aff&wmlspartner=imp_62662&clickid=0Ddyxy1iixyLT2NwUx0Mo3b7UkER0EwpLVnvx00&sharedid=&affiliates_ad_id=612734&campaign_id=9383',walmart_website_name,'',walmart_keyword,headers,))
 
 s.run()
 
