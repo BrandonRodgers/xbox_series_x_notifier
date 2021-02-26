@@ -55,7 +55,7 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/c
 
 gamestop_website_name = "Game Stop"
 gamestop_keyword = "Not Available"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html?condition=New',gamestop_website_name,'',gamestop_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5-spider-man-ultimate-edition-bundle-with-20-gamestop-gift-card/B225170D.html',gamestop_website_name,'Spiderman, gift card',gamestop_keyword,headers,))
 
 walmart_website_name = "Walmart"
 wlmart_keyword = "out of stock"
