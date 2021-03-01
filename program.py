@@ -52,6 +52,8 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/s
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/96be4c49-d98e-47c6-9a68-291c646d0e47',best_buy_website_name,'Spiderman',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/8f146095-0a5f-4993-b123-711a1d34745b',best_buy_website_name,'Extra Controller',best_buy_keyword,headers,))
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/c471fae2-1d2c-4870-ad3d-d39bffa39af2',best_buy_website_name,'Spider Man, COD, Demon Souls',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/98441ee6-d6eb-4e8b-846c-949092a71af8',best_buy_website_name,'Ratchet and Clank',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/ps5-consoles/7aa0554d-d14f-4cd4-b401-b288198ab4d4',best_buy_website_name,'Resident Evil',best_buy_keyword,headers,))
 
 gamestop_website_name = "Game Stop"
 gamestop_keyword = "Not Available"
