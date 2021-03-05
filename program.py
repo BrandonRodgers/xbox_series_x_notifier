@@ -60,6 +60,8 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/c
 s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7298b293-4d51-43fd-adb4-ad00cfa76c4f',best_buy_website_name,'extra controller',best_buy_keyword,headers,))
 #s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/907d28df-4262-40d3-8926-8d556f264857',best_buy_website_name,'game pass, extra controller',best_buy_keyword,headers,))
 #s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/7d2eb376-760d-4806-b239-668dcd0fe376',best_buy_website_name,'halo, game pass, extra controller',best_buy_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.bestbuy.com/site/combo/xbox-series-x-and-s-consoles/f91525af-c8fe-4570-ba78-8860ddcabffe',best_buy_website_name,'RE Village',best_buy_keyword,headers,))
+
 
 gamestop_website_name = "Game Stop"
 gamestop_keyword = "Not Available"
