@@ -62,7 +62,7 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video
 
 sams_website_name = "Sams"
 sams_keyword = "Not available"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html',sams_website_name,'spiderman, ps now',sams_keyword,headers,))
+s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.samsclub.com/p/ps5-bundle/prod24980178?xid=plp_product_1',sams_website_name,'spiderman, ps now',sams_keyword,headers,))
 
 walmart_website_name = "Walmart"
 wlmart_keyword = "out of stock"
