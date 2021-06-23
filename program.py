@@ -86,7 +86,7 @@ s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.costco.com/xbox-se
 
 sams_website_name = "Sams"
 sams_keyword = "Out of stock"
-s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.samsclub.com/p/xbox-series-x-bundle-charger-wired-headset/prod25940011?xid=plp_product_14',sams_website_name,'charger, headphones',sams_keyword,headers,))
+# s.enter(sleep_time, priority, checkOnWebsite, (s,'https://www.samsclub.com/p/xbox-series-x-bundle-charger-wired-headset/prod25940011?xid=plp_product_14',sams_website_name,'charger, headphones',sams_keyword,headers,))
 
 ant_online_website_name = "Ant Online"
 ant_online_keyword = "Sold Out"
