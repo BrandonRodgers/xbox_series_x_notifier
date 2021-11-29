@@ -8,7 +8,7 @@ Create virtual environment and install packages: <br/>
 Activate virtual environment <br/>
 - Git Bash: **source venv/Scripts/activate** <br/>
 - CMD: **.\venv\Scripts\activate.bat** <br/>
-Install packages after activating virtual environment
+Install packages after activating virtual environment. <br/>
 Make sure to run this from the folder that has the requirements.txt file
 - **pip install -r requirements.txt** <br/>
 
