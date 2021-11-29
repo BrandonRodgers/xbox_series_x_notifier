@@ -12,5 +12,5 @@ Install packages after activating virtual environment. <br/>
 Make sure to run this from the folder that has the requirements.txt file
 - **pip install -r requirements.txt** <br/>
 
-Launch the program in the same terminal you have the virtual environment activated: <br/>
+Launch the program in the same terminal you have the virtual environment activated:
 - **python program.py**
