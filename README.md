@@ -8,6 +8,9 @@ Create virtual environment: <br/>
 Activate virtual environment <br/>
 - Git Bash: **source venv/Scripts/activate** <br/>
 - CMD: **.\venv\Scripts\activate.bat** <br/>
+Install packages after activating virtual environment
+Make sure to run this from the folder that has the requirements.txt file
+- **pip install -r requirements.txt** <br/>
 
-Launch the program in a terminal: <br/>
+Launch the program in the same terminal you have the virtual environment activated: <br/>
 - **python program.py**
