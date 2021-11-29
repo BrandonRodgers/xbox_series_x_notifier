@@ -3,7 +3,7 @@ Python script to check on websites for a product's availability. It will open th
 
 Tested with Python 3.9+ <br/>
 Recommend using virtual environment <br/>
-Create virtual environment: <br/>
+Create virtual environment and install packages: <br/>
 - **python -m venv venv** <br/>
 Activate virtual environment <br/>
 - Git Bash: **source venv/Scripts/activate** <br/>
